@@ -20,17 +20,33 @@
         },
       };
     </script>
-
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-straight/css/uicons-bold-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
     <title>Assignment-03</title>
   </head>
-  <body class="">
-    <header>
+  <body class=" ">
+    <header class="bg-gradient-to-b from-base-200 to-white">
       <!-- navbar  -->
-      <nav class="">
+      <nav class="max-w-screen-xl mx-auto">
         <div class="navbar bg-base-200 py-4 px-2">
+          <!-- navbar start  -->
           <div class="navbar-start">
+            <i
+              class="fi fi-bs-arrow-up-right bg-[#ABEF5F] p-3 rounded-full flex"
+            ></i>
             <a class="btn btn-ghost text-xl">Rinterio</a>
           </div>
+          <!-- middle part of navbar  -->
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
               <li><a>Home</a></li>
@@ -40,31 +56,33 @@
               <li><a>Contact us</a></li>
             </ul>
           </div>
+          <!-- end part of navbar  -->
           <div class="navbar-end">
+            <div class="hidden lg:flex items-center justify-evenly w-2/3">
+              <i
+                class="fi fi-rr-shopping-cart bg-white p-2 rounded-full flex"
+              ></i>
+              <i class="fi fi-rr-search bg-white p-2 rounded-full flex"></i>
+              <button
+                class="hidden bg-[#ABEF5F] font-bold rounded-3xl px-6 py-2 lg:flex justify-center items-center gap-4"
+                type="button"
+              >
+                <p>Book Consult</p>
+                <i
+                  class="fi fi-bs-arrow-up-right flex bg-black p-2 rounded-full text-white font-normal"
+                ></i>
+              </button>
+            </div>
             <div class="dropdown">
-              <div
+              <i
                 tabindex="0"
                 role="button"
-                class="btn btn-ghost rounded-full bg-white font-bold bg lg:hidden"
+                class="fi fi-br-menu-burger flex rounded-full text-2xl p-4 bg-white font-bold lg:hidden"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6 text-gray-600 text-2xl"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </div>
+              </i>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                class="menu menu-md dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-0"
               >
                 <li><a>Home</a></li>
                 <li><a>Services</a></li>
@@ -76,11 +94,33 @@
           </div>
         </div>
       </nav>
-      <section>
-        <!-- banner  -->
+      <!-- banner  -->
+      <section class="max-w-screen-xl mx-auto">
+        <div
+          class="flex flex-col p-4 lg:px-20 justify-center items-center gap-4 lg:gap-8"
+        >
+          <img src="./images/banner.png" alt="" />
+          <h1 class="text-2xl lg:text-5xl font-bold text-center text-[#212121]">
+            A barn house of this design has a striking appearance
+          </h1>
+          <p class="text-center text-[#494949]">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents, and
+            large windows that flood the space with natural light.
+          </p>
+          <button
+            class="bg-[#cef2a5] font-bold rounded-3xl px-8 py-2 flex justify-center items-center gap-4"
+            type="button"
+          >
+            <p>View Details</p>
+            <i
+              class="fi fi-bs-arrow-up-right flex bg-[#ABEF5F] p-2 rounded-full"
+            ></i>
+          </button>
+        </div>
       </section>
     </header>
-    <main>This is body</main>
+    <main></main>
     <footer>Footer</footer>
   </body>
 </html>
